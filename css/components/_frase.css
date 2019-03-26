@@ -1,0 +1,13 @@
+.frase {
+  width: 50vw;
+  height: 50vh;
+  background-image: url(../img/jhass-fin.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+  position: relative;
+  color: #FAFAFA;
+  text-align: center; }

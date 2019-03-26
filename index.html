@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>JC Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#333333" />
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-app">
+
+        <div v-if="loading" class="charger">
+            <div class="box">
+                <img src="img/logo-svg.svg" alt="" class="loader__img">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+                <div class="b b3"></div>
+                <div class="b b4"></div>
+            </div>
+        </div>
+        <div v-else>
+
+            <header class="header-page" id="inicio">
+                <section class="header__hide" v-if="show">
+                    <div class="cont-header__hide">
+                        <div class="cont-hide__button">
+                            <button class="header__button" v-on:click="show = !show"><i class="fas fa-times"></i></button>
+                        </div>
+                        <ul class="cont-links">
+                            <li><a href="#inicio" v-on:click="show = !show">Inicio</a></li>
+                            <li><a href="#about" v-on:click="show = !show">Acerca de</a></li>
+                            <li><a href="#work" v-on:click="show = !show">Experiencia Laboral</a></li>
+                            <li><a href="#skills" v-on:click="show = !show">Skills</a></li>
+                        </ul>
+                        <div class="header__redes-hide">
+                            <img src="img/logo-svg.svg" alt="" class="header__logo-hide">
+                            <aside class="header__redes">
+                                <a href="https://www.facebook.com/jhassir.candia.9" class="redes__links" target="_blank" v-on:click="show = !show"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                <a href="https://github.com/andruu11" class="redes__links" target="_blank" v-on:click="show = !show"><i
+                                        class="fab fa-github-square fa-2x"></i></a>
+                                <a href="www.youtube.com" class="redes__links" target="_blank" v-on:click="show = !show"><i class="fab fa-youtube fa-2x"></i></a>
+                                <a href="https://www.instagram.com/jhass.andree/" class="redes__links" target="_blank" v-on:click="show = !show"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=59170526905&text=Que tal me contacto contigo a través de tu sitio Web, quería consultarte sobre:" class="redes__links" target="_blank" v-on:click="show = !show"><i class="fab fa-whatsapp fa-2x"></i></a>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+                <section class="header__info" v-else>
+                    <div class="cont-header__button">
+                        <button class="header__button" v-on:click="show = !show"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <div class="header__center">
+                        <img src="img/logo-svg.svg" alt="" class="header__img">
+                        <h1 class="header__titulo">JHASSIR CANDIA</h1>
+                        <h4 class="header__subtitulo">DEVELOPER</h4>
+                        <aside class="header__redes">
+                            <a href="https://www.facebook.com/jhassir.candia.9" class="redes__links" target="_blank"><i
+                                    class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="https://github.com/andruu11" class="redes__links" target="_blank"><i
+                                    class="fab fa-github-square fa-2x"></i></a>
+                            <a href="www.youtube.com" class="redes__links" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a href="https://www.instagram.com/jhass.andree/" class="redes__links" target="_blank"><i
+                                    class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=59170526905&text=Que tal me contacto contigo a través de tu sitio Web, quería consultarte sobre:" class="redes__links" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        </aside>
+                    </div>
+                </section>
+            </header>
+            <main>
+                <section class="about-me" id="about">
+                    <h2 class="section-title">SOBRE MI</h2>
+                    <div class="about-me__content">
+                        <img src="img/jhass.jpg" alt="" class="img__about-me">
+                        <p class="text__about-me"> Soy un boliviano apasionado por la tecnologia, en especial por el desarrollo y el diseño Web, me gusta enforcarme en el UX y en el IU de los trabajos en los que desarrollo, vale mencionar que los mismos tratan de no solo tener
+                            un fin comercial sino tambien un fin social, es decir, que de alguna manera puedan aportar al mundo. <br> Me apasiona innovar, aprender mas cada dia y enseñar, para poder mejorar mi trabajo, acotar mas calidad al mismo y compartir
+                            conocimientos con los demas.</p>
+                    </div>
+
+                </section>
+                <section class="work" id="work">
+                    <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+                    <div class="work_content">
+                        <article class="container__work">
+                            <div class="icon__work"><i class="fas fa-balance-scale fa-lg"></i></div>
+                            <h3 class="title__work">CONSEJO DE LA MAGISTRATURA</h3>
+                            <p class="about__work">Pasante de la Unidad de Informatica</p>
+                            <p class="date__work">22/02/2017 - 20/09/2017</p>
+                            <a href="" class="button__work"></a>
+                        </article>
+                        <article class="container__work">
+                            <div class="icon__work"><i class="fas fa-graduation-cap fa-lg"></i></div>
+                            <h3 class="title__work">UNIFRANZ</h3>
+                            <p class="about__work">Ayudante de Programación II</p>
+                            <p class="date__work">I/2017 - II/2017</p>
+                            <a href="" class="button__work"> </a>
+                        </article>
+                        <article class="container__work">
+                            <div class="icon__work"><i class="fas fa-business-time fa-lg"></i></div>
+                            <h3 class="title__work">CAMARA DE EXPORTADORES LA PAZ</h3>
+                            <p class="about__work">Pasante Encargado de Sistemas </p>
+                            <p class="date__work">05/03/2018 - 13/08/2018</p>
+                            <a href="" class="button__work"> </a>
+                        </article>
+                        <article class="container__work">
+                            <div class="icon__work"><i class="fas fa-business-time fa-lg"></i></div>
+                            <h3 class="title__work">Embriovid Clinica Los Andes</h3>
+                            <p class="about__work">Area de Sistemas </p>
+                            <p class="date__work">28/01/2019 - Actualidad</p>
+                            <a href="" class="button__work"> </a>
+                        </article>
+
+                    </div>
+                </section>
+                <section class="frase">
+                    <div class="frase__image">
+                        <p class="frase__text">" Cada uno es el diseñador de sus sueños "</p>
+                    </div>
+                </section>
+                <section class="skills" id="skills">
+                    <h2 class="section-title">SKILLS</h2>
+                    <div class="container__skills">
+
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>100%</p>
+                            </div>
+                            <div class="progress-bar fuxia shine">
+                                <span style="width: 100%"></span>
+                            </div>
+                            <h4 class="skill__title">Adobe XD</h4>
+                            <div class="skill__icon">
+                                <img src="img/adobexd.png" alt="" class="skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar orange shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Adobe Illustrator</h4>
+                            <div class="skill__icon">
+                                <img src="img/Illustrator.png" alt="" class="skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar skyblue shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Adobe Photoshop</h4>
+                            <div class="skill__icon">
+                                <img src="img/photoshop.png" alt="" class="skill__img">
+                            </div>
+                        </article>
+
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar green shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Node Js</h4>
+                            <div class="skill__icon">
+                                <img src="img/nodejs-icon.svg" alt="" class="fondo border-green skill__img ">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar red shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Laravel</h4>
+                            <div class="skill__icon">
+                                <img src="img/laravel.png" alt="" class="fondo border-red skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>60%</p>
+                            </div>
+                            <div class="progress-bar green shine">
+                                <span style="width: 60%"></span>
+                            </div>
+                            <h4 class="skill__title">LoopBack</h4>
+                            <div class="skill__icon">
+                                <img src="img/loopback.png" alt="" class="fondo border-green skill__img">
+                            </div>
+                        </article>
+
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>80%</p>
+                            </div>
+                            <div class="progress-bar red-angular shine">
+                                <span style="width: 80%"></span>
+                            </div>
+                            <h4 class="skill__title">Angular</h4>
+                            <div class="skill__icon">
+                                <img src="img/angular.png" alt="" class="fondo border-red-angular skill__img ">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar vue shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Vue</h4>
+                            <div class="skill__icon">
+                                <img src="img/vue.png" alt="" class="fondo border-vue skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>60%</p>
+                            </div>
+                            <div class="progress-bar bluec shine">
+                                <span style="width: 60%"></span>
+                            </div>
+                            <h4 class="skill__title">WordPress</h4>
+                            <div class="skill__icon">
+                                <img src="img/wp.png" alt="" class="fondo border-bluec skill__img">
+                            </div>
+                        </article>
+
+
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar sky-apps shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">Ionic</h4>
+                            <div class="skill__icon">
+                                <img src="img/ionic.png" alt="" class="fondo border-sky-apps skill__img ">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>50%</p>
+                            </div>
+                            <div class="progress-bar sky-flutter shine">
+                                <span style="width: 50%"></span>
+                            </div>
+                            <h4 class="skill__title">Flutter</h4>
+                            <div class="skill__icon">
+                                <img src="img/flutter.png" alt="" class="fondo border-sky-flutter skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>60%</p>
+                            </div>
+                            <div class="progress-bar bluec shine">
+                                <span style="width: 60%"></span>
+                            </div>
+                            <h4 class="skill__title">C#</h4>
+                            <div class="skill__icon">
+                                <img src="img/csharp.png" alt="" class="fondo border-bluec skill__img">
+                            </div>
+                        </article>
+
+
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar red shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">SQL Server</h4>
+                            <div class="skill__icon">
+                                <img src="img/sql.png" alt="" class="fondo border-red skill__img ">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>65%</p>
+                            </div>
+                            <div class="progress-bar pg shine">
+                                <span style="width: 65%"></span>
+                            </div>
+                            <h4 class="skill__title">PostgreSql</h4>
+                            <div class="skill__icon">
+                                <img src="img/postgresql.png" alt="" class="fondo border-pg skill__img">
+                            </div>
+                        </article>
+                        <article class="skill__container">
+                            <div class="skill__percent">
+                                <p>70%</p>
+                            </div>
+                            <div class="progress-bar green shine">
+                                <span style="width: 70%"></span>
+                            </div>
+                            <h4 class="skill__title">MongoDB</h4>
+                            <div class="skill__icon">
+                                <img src="img/mongo.png" alt="" class="fondo border-green skill__img">
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer-page">
+                <div class="links-menu"> <a href="#inicio">Inicio</a> | <a href="#about">Acerca de</a> | <a href="#work">Experiencia
+                        Laboral</a> | <a href="#skills">Skills</a> </div>
+                <div>
+                    <p>Copyright © 2019 Jhassir Candia</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html2

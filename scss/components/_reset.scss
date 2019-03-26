@@ -1,0 +1,112 @@
+/*****  Reset Style  ******/
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.margen {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(172, 159, 159);
+    border-radius: .5px;
+}
+
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Cambiamos el fondo cuando esté en active */
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+
+::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+
+/* Cambiamos el fondo cuando esté en active o hover */
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    outline: none;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
+}

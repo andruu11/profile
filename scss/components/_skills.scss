@@ -1,0 +1,118 @@
+.skills {
+    background-color: #F6F6F6;
+    padding: 5rem 0;
+}
+
+.container__skills {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill__container {
+    background-color: #FAFAFA;
+    border: .2rem solid #333;
+    padding: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0;
+    @include media(sm) {
+        width: 35%;
+    }
+    @include media(md) {
+        width: 30%;
+    }
+    @include media(lg) {
+        width: 30%;
+    }
+}
+
+.skill__title {
+    font-family: $font-anton;
+    color: #333;
+    padding: .1rem 0;
+    text-align: center;
+}
+
+img.skill__img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill__percent {
+    position: absolute;
+    bottom: -30px;
+    background-color: #333;
+    color: #FAFAFA;
+    font-family: $font-anton;
+    padding: 1rem;
+    border: .1rem solid #333;
+}
+
+.skill__icon {
+    position: absolute;
+    top: -30px;
+}
+
+.fondo {
+    background-color: #424242;
+    padding: 8px;
+}
+
+.border-green {
+    border: .2rem solid #8CC84B;
+}
+
+.border-red {
+    border: .2rem solid #D32F2F;
+}
+
+.border-fuxia {
+    border: .2rem solid#FF2BC2;
+}
+
+.border-orange {
+    border: .2rem solid#F07501;
+}
+
+.border-green {
+    border: .2rem solid#a5df41;
+}
+
+.border-red {
+    border: .2rem solid#F94E3A;
+}
+
+.border-skyblue {
+    border: .2rem solid#80BAFB;
+}
+
+.border-red-angular {
+    border: .2rem solid#D6002F;
+}
+
+.border-sky-apps {
+    border: .2rem solid#4F8FF7;
+}
+
+.border-sky-flutter {
+    border: .2rem solid#54C5F8;
+}
+
+.border-bluec {
+    border: .2rem solid#007AFF;
+}
+
+.border-pg {
+    border: .2rem solid#336791;
+}
+
+.border-vue {
+    border: .2rem solid#3C9376;
+}

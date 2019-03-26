@@ -1,0 +1,57 @@
+            .about-me {
+                margin: auto;
+                width: 90%;
+                padding: 5rem 0;
+            }
+            
+            .about-me__content {
+                margin: auto;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                @include media(sm) {
+                    flex-direction: row;
+                }
+                @include media(md) {
+                    width: 70%;
+                }
+                @include media(lg) {
+                    width: 60%;
+                }
+            }
+            
+            .text__about-me {
+                font-family: $font-oswald;
+                line-height: 2;
+                color: #424242;
+                @include media(sm) {
+                    padding: 0 3rem;
+                }
+                @include media(md) {
+                    padding: 0 4rem;
+                }
+            }
+            
+            .img__about-me {
+                /* cambia estos dos valores para definir el tamaño de tu círculo */
+                height: 150px;
+                width: 150px;
+                /* los siguientes valores son independientes del tamaño del círculo */
+                background-repeat: no-repeat;
+                background-position: 50%;
+                border-radius: 50%;
+                background-size: 100% auto;
+                border: .08rem solid #424242;
+                margin: 1rem 0;
+                @include media(sm) {
+                    height: 200px;
+                    width: 200px;
+                    margin: 0 0;
+                }
+                @include media(md) {
+                    height: 250px;
+                    width: 250px;
+                }
+            }

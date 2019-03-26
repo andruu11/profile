@@ -1,0 +1,14 @@
+.work {
+  margin: auto;
+  width: 90%; }
+
+.work_content {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container__work {
+  background-color: #333333;
+  padding: 5rem; }

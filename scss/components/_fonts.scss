@@ -1,0 +1,53 @@
+$font-anton: 'Anton',
+sans-serif;
+$font-oswald: 'Oswald',
+sans-serif;
+.section-title {
+    font-family: $font-oswald;
+    font-size: 1.3em;
+    color: #333333;
+    display: flex;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    @include media(xxs) {
+        font-size: 1.4em;
+        width: 90%;
+    }
+    @include media(xs) {
+        padding: 1.5rem 0;
+        width: 70%;
+    }
+    @include media(sm) {
+        width: 60%;
+        font-size: 1.8em;
+        padding: 3rem 0;
+    }
+    @include media(lg) {
+        font-size: 2em;
+        width: 50%;
+    }
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: auto;
+    height: .05em;
+    background-color: #333333;
+    display: block;
+}
+
+.section-title::before {
+    margin-right: .5em;
+    /*background: linear-gradient(to left, yellow, red);*/
+}
+
+.section-title::after {
+    margin-left: .5em;
+    /*background: linear-gradient(to right, yellow, red);*/
+}

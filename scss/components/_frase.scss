@@ -1,0 +1,36 @@
+.frase {
+    background-color: #F0F0F0;
+}
+
+.frase__image {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/frase.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    -webkit-clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 19%, 100% 0, 100% 100%, 0 100%, 0 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase__text {
+    margin: auto;
+    width: 80%;
+    color: #FAFAFA;
+    text-align: center;
+    font-family: $font-oswald;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+    @include media(sm) {
+        font-size: 2.5rem;
+    }
+    @include media(md) {
+        font-size: 3rem;
+    }
+}

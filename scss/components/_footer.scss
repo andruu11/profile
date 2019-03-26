@@ -1,0 +1,23 @@
+.footer-page {
+    background-color: #333;
+    color: #FAFAFA;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font-oswald;
+}
+
+.links-menu {
+    margin: 1rem 0;
+}
+
+.links-menu a {
+    color: #FAFAFA;
+    font-size: 1.1rem;
+}
+
+.links-menu a:hover {
+    color: #BDBDBD;
+}

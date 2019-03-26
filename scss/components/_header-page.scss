@@ -1,0 +1,138 @@
+.header__info {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/jhass-fin.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+    position: relative;
+    color: #FAFAFA;
+    text-align: center;
+}
+
+.header__hide {
+    width: 100vw;
+    height: 100vh;
+    background-color: #242424;
+    position: relative;
+    color: #FAFAFA;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.cont-header__hide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    @include media(sm) {
+        width: 80%;
+    }
+}
+
+.header__redes-hide {
+    display: none;
+    @include media(sm) {
+        display: block;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: .3rem solid #FAFAFA;
+    }
+}
+
+.cont-links {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media(sm) {
+        width: 50%;
+    }
+}
+
+.cont-links li {
+    margin: .8rem 0;
+}
+
+.cont-links li a {
+    font-size: 1.5rem;
+    font-family: $font-oswald;
+    color: #FAFAFA
+}
+
+.cont-hide__button {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont-header__button {
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.header__button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #FAFAFA;
+    margin: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button.header__button:active {
+    text-decoration: none;
+}
+
+.header__center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img {
+    display: inline-block;
+    text-align: center;
+    width: 9rem;
+    margin-bottom: 1rem;
+}
+
+.header__titulo {
+    font-family: $font-anton;
+    letter-spacing: .15rem;
+    font-size: 1.8rem;
+}
+
+.header__subtitulo {
+    font-family: $font-oswald;
+    font-size: 1.2rem;
+}
+
+.header__redes {
+    margin-top: 1rem;
+}
+
+.redes__links i {
+    color: #FAFAFA;
+    padding: 0 .3rem;
+}
+
+.header__logo-hide {
+    display: inline-block;
+    text-align: center;
+    width: 9rem;
+    margin-bottom: 2rem;
+}

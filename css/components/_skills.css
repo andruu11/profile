@@ -1,0 +1,9 @@
+.skills {
+  background-color: #F6F6F6; }
+
+.container__skill {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
